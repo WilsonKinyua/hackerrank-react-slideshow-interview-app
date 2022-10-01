@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 function Slides({slides}) {
-
+    const [slide,getSlide] = useState(slides)
+    console.log(slide)
     return (
         <div>
             <div id="navigation" className="text-center">
